@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JS Exam — Countdown + Random Non-Repeated Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card" id="examCard">
+      <div class="top">
+        <div>
+          <div style="font-size: 0.9rem; margin-bottom: 4px">JS Exam</div>
+          <div class="meta" id="progress">Question 0 / 0</div>
+        </div>
+        <div class="timer" id="timer">00:00</div>
+      </div>
+
+      <div id="questionArea" class="question">
+        <!-- question text inserted here -->
+      </div>
+
+      <div id="choices" class="choices">
+        <!-- choices radio buttons inserted here -->
+      </div>
+
+      <div
+        style="
+          margin-top: 16px;
+          display: flex;
+          gap: 8px;
+          justify-content: flex-end;
+        "
+      >
+        <button id="prevBtn" class="btn-secondary">Previous</button>
+        <button id="nextBtn">Next</button>
+      </div>
+
+      <div id="finishArea" class="hidden">
+        <div class="result" id="result"></div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+          "
+        >
+          <button id="retryBtn" class="btn-secondary">Retry</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" />
+  </body>
+</html>
